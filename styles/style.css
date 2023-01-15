@@ -185,7 +185,7 @@ nav ul li a:hover{
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 45px 36px;
-    transition: 2s transform ease;
+    transition: 2s transform ease-in;
 }
 .fact-item:hover{
     transform: scale(.60);
@@ -273,4 +273,113 @@ nav ul li a:hover{
     font-size: 18px;
     text-align: center;
     color: #424242;
+}
+
+/*------- Media Queries ----------*/
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .container{
+        max-width: 688px;
+        margin: 0 auto;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .header{
+        background: none;
+        text-align: center;
+    }
+    .navbar, .quick-list, .feature{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar{
+        padding: 20px 0 0 0;
+    }
+    nav{
+        margin-top: 20px;
+    }
+    nav ul {
+        gap: 0;
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 20px;
+        border-bottom: 2px solid #1F374B;
+    }
+    .banner{
+        padding-top: 74px;
+        width: 100%;
+    }
+    .banner p{
+        display: none;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .banner-img {
+        height: 400px;
+        margin-top: 16px;
+    }
+    .quick-list-title{
+        font-size: 30px;
+    }
+    .quick-list-image {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quick-list-text {
+        text-align: center;
+    }
+    .quick-btn{
+        font-size: 18px;
+        padding: 18px 20px;
+        margin-bottom: 20px;
+    }
+    .feature{
+        padding-left: 5px;
+    }
+    .feature-btn span{
+        font-size: 30px;
+    }
+    .feature-btn {
+        position: default;
+        bottom: 0;
+        right: 0;
+        padding: 30px 40px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .feature-card{
+        margin-bottom: 0;
+    }
+    .facts{
+        margin-top: 20px;
+        padding-left: 5px;
+        width: 100%;
+    }
+    .fact-items{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sponsor{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .sponsors-img{
+        flex-direction: column;
+    }
+     .project{
+       width: 100%;
+    }
+    .project-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        margin: 70px 20px 80px;
+    }
 }
